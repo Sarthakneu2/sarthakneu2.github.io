@@ -1,0 +1,17 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import ProjectCard from "../../components/ProjectCard.astro";
+import { projects } from "../../data/projects.js";
+---
+<BaseLayout active="Projects" title="Projects | Sarthak Neupane">
+  <section class="page-hero container">
+    <p class="eyebrow">SELECTED WORK / 02</p>
+    <h1>Projects, experiments<br />and <em>questions explored.</em></h1>
+    <p class="page-lede">A timeline of learning across electronics, embedded systems, energy, software and quantitative research.</p>
+  </section>
+  <section class="section container">
+    <div class="project-grid project-grid-all">
+      {projects.map((project) => <ProjectCard project={project} />)}
+    </div>
+  </section>
+</BaseLayout>

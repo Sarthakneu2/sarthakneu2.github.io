@@ -1,0 +1,25 @@
+---
+const { active = "" } = Astro.props;
+const links = [
+  ["About", "/about/"],
+  ["Projects", "/projects/"],
+  ["Experience", "/experience/"],
+  ["CV", "/cv/"],
+  ["Leadership", "/leadership/"],
+  ["Contact", "/contact/"]
+];
+---
+<header class="site-header">
+  <div class="container nav-wrap">
+    <a class="brand" href="/" aria-label="Sarthak Neupane home">
+      <span class="brand-mark">SN</span>
+      <span>SARTHAK NEUPANE</span>
+    </a>
+    <nav aria-label="Main navigation">
+      {links.map(([label, href]) => (
+        <a class:list={["nav-link", active === label ? "is-active" : ""]} href={href}>{label}</a>
+      ))}
+    </nav>
+    <a class="nav-cta" href="/contact/">Let's talk <span>↗</span></a>
+  </div>
+</header>

@@ -1,0 +1,20 @@
+---
+import ResponsiveImage from "./ResponsiveImage.astro";
+const { project } = Astro.props;
+---
+<a class="project-card" href={`/projects/${project.slug}/`}>
+  <div class="project-image">
+    <ResponsiveImage
+      src={project.image}
+      alt={project.imageAlt || project.title}
+      sizes="(max-width: 650px) calc(100vw - 36px), (max-width: 900px) 50vw, 33vw"
+      objectFit={project.imageFit || "cover"}
+      objectPosition={project.imagePosition || "center"}
+    />
+    <span class="image-arrow">↗</span>
+  </div>
+  <div class="project-meta"><span>{project.number} / {project.category}</span><span>{project.year}</span></div>
+  <h3>{project.title}</h3>
+  <p>{project.summary}</p>
+  <span class="text-link">Explore project <span>↗</span></span>
+</a>

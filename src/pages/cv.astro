@@ -1,0 +1,89 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import { areasOfInterest, cvProjects, education, experience, leadership, skills, site } from "../data/site.js";
+---
+<BaseLayout active="CV" title="CV | Sarthak Neupane" description="Curriculum vitae of Sarthak Neupane: electrical engineering, quantitative research, data analytics, embedded systems and energy technologies.">
+  <section class="cv-page container">
+    <header class="cv-hero">
+      <div>
+        <p class="eyebrow">CURRICULUM VITAE</p>
+        <h1>{site.name}</h1>
+        <p class="cv-role">Electrical Engineer | Machine Learning & Data Analytics | Energy Systems</p>
+        <p class="cv-contact"><a href={`mailto:${site.email}`}>{site.email}</a><span>·</span><a href="tel:+9779807299975">+977 9807299975</a><span>·</span><span>{site.location}</span></p>
+      </div>
+      <button class="button button-dark cv-print" id="print-cv" type="button">Print / save PDF <span>↗</span></button>
+    </header>
+
+    <section class="cv-section">
+      <h2>Professional Summary</h2>
+      <div class="cv-section-content">
+        <p>Electrical and Electronics Engineering graduate from Kathmandu University, specialising in Power and Control, with practical experience in machine learning, data analytics, embedded systems, energy technologies and software development. Interested in combining data, intelligent algorithms and physical systems to solve practical engineering problems. Project experience includes embedded energy monitoring, hybrid power-system modelling, software analytics platforms and quantitative research using Python, alongside organisational leadership, research collaboration and community initiatives.</p>
+      </div>
+    </section>
+
+    <section class="cv-section">
+      <h2>Work Experience</h2>
+      <div class="cv-section-content">
+        {experience.map((item) => (
+          <article class="cv-entry cv-experience-entry">
+            <header class="cv-experience-meta"><h3>{item.role}</h3><p>{item.org}</p><time>{item.period}</time></header>
+            <ul>{item.points.map((point) => <li>{point}</li>)}</ul>
+          </article>
+        ))}
+      </div>
+    </section>
+
+    <section class="cv-section">
+      <h2>Education</h2>
+      <div class="cv-section-content">
+        {education.map((item) => (
+          <article class="cv-entry cv-entry-heading"><div><h3>{item.qualification}</h3><p>{item.institution}</p></div><time>{item.period}</time></article>
+        ))}
+      </div>
+    </section>
+
+    <section class="cv-section">
+      <h2>Skills</h2>
+      <div class="cv-section-content cv-skills">
+        {skills.map((item) => <p><strong>{item.category}:</strong> {item.items}</p>)}
+      </div>
+    </section>
+
+    <section class="cv-section">
+      <h2>Selected Technical Projects</h2>
+      <div class="cv-section-content">
+        {cvProjects.map((project) => (
+          <article class="cv-entry">
+            <div class="cv-entry-heading"><div><h3>{project.title}</h3><p>{project.subtitle}</p></div></div>
+            <ul>{project.points.map((point) => <li>{point}</li>)}</ul>
+          </article>
+        ))}
+      </div>
+    </section>
+
+    <section class="cv-section">
+      <h2>Leadership & Community</h2>
+      <div class="cv-section-content">
+        {leadership.map((item) => (
+          <article class="cv-entry">
+            <div class="cv-entry-heading"><div><h3>{item.org}</h3><p>{item.role}</p></div><time>{item.period}</time></div>
+            <ul>{item.points.map((point) => <li>{point}</li>)}</ul>
+          </article>
+        ))}
+      </div>
+    </section>
+
+    <section class="cv-section">
+      <h2>Areas of Interest</h2>
+      <div class="cv-section-content"><ul class="cv-interest-list">{areasOfInterest.map((interest) => <li>{interest}</li>)}</ul></div>
+    </section>
+
+    <section class="cv-section">
+      <h2>References</h2>
+      <div class="cv-section-content"><p class="cv-references">Available upon request.</p></div>
+    </section>
+  </section>
+  <script>
+    document.getElementById("print-cv")?.addEventListener("click", () => window.print());
+  </script>
+</BaseLayout>

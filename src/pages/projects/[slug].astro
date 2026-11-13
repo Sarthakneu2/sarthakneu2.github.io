@@ -1,0 +1,54 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import ResponsiveImage from "../../components/ResponsiveImage.astro";
+import { projects } from "../../data/projects.js";
+export function getStaticPaths() {
+  return projects.map((project) => ({ params: { slug: project.slug }, props: { project } }));
+}
+const { project } = Astro.props;
+const currentIndex = projects.findIndex((p) => p.slug === project.slug);
+const nextProject = projects[(currentIndex + 1) % projects.length];
+---
+<BaseLayout active="Projects" title={`${project.title} | Sarthak Neupane`} description={project.summary}>
+  <section class="project-detail-hero container">
+    <a class="back-link" href="/projects/">← All projects</a>
+    <p class="eyebrow">{project.number} / {project.category} / {project.year}</p>
+    <h1>{project.title}</h1>
+    <p class="page-lede">{project.summary}</p>
+    <div class:list={["detail-gallery", project.gallery?.length > 1 && "has-gallery"]}>
+      {(project.gallery || [{ src: project.image, alt: project.imageAlt || project.title, fit: project.imageFit, position: project.imagePosition }]).map((photo) => (
+        <figure>
+          <ResponsiveImage
+            src={photo.src}
+            alt={photo.alt}
+            sizes="(max-width: 650px) calc(100vw - 36px), (max-width: 1160px) 50vw, 560px"
+            loading="eager"
+            fetchPriority="high"
+            objectFit={photo.fit || "cover"}
+            objectPosition={photo.position || "center"}
+          />
+          {photo.caption && <figcaption>{photo.caption}</figcaption>}
+        </figure>
+      ))}
+    </div>
+  </section>
+  <section class="container detail-layout section">
+    <aside class="detail-sidebar">
+      <div><span>PROJECT TYPE</span><b>{project.category}</b></div>
+      <div><span>WHEN</span><b>{project.year}</b></div>
+      {project.github && <div><span>CODE / REPOSITORY</span><a href={project.github} target="_blank" rel="noreferrer">View on GitHub ↗</a></div>}
+      <div><span>TOOLS & METHODS</span><div class="tag-list">{project.stack.map((tool) => <span>{tool}</span>)}</div></div>
+    </aside>
+    <article class="detail-content">
+      <div class="detail-block"><p class="eyebrow">01 / OVERVIEW</p><h2>The project</h2><p>{project.overview}</p></div>
+      <div class="detail-block"><p class="eyebrow">02 / MOTIVATION</p><h2>Why I explored it</h2><p>{project.motivation}</p></div>
+      <div class="detail-block"><p class="eyebrow">03 / MY CONTRIBUTION</p><h2>What I worked on</h2><ul>{project.contribution.map((point) => <li>{point}</li>)}</ul></div>
+      <div class="detail-block"><p class="eyebrow">04 / OUTCOME</p><h2>What came out of it</h2><ul>{project.results.map((point) => <li>{point}</li>)}</ul></div>
+      <div class="project-note"><b>Technical note</b><p>{project.note}</p></div>
+      {!project.gallery && <p class="photo-reminder">PHOTO NOTE: Replace the conceptual image above with your own project photographs, circuit diagrams, screenshots or field documentation.</p>}
+    </article>
+  </section>
+  <section class="next-project">
+    <div class="container next-project-inner"><div><p class="eyebrow">UP NEXT</p><h2>{nextProject.title}</h2></div><a class="round-link" href={`/projects/${nextProject.slug}/`}>↗</a></div>
+  </section>
+</BaseLayout>

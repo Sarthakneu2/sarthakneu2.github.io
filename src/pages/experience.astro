@@ -1,0 +1,40 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import ResponsiveImage from "../components/ResponsiveImage.astro";
+import { experience } from "../data/site.js";
+---
+<BaseLayout active="Experience" title="Experience & Research | Sarthak Neupane">
+  <section class="page-hero container">
+    <p class="eyebrow">EXPERIENCE & RESEARCH / 03</p>
+    <h1>Learning from real<br /><em>systems and people.</em></h1>
+    <p class="page-lede">Experiences that helped me connect engineering concepts with practical infrastructure, research and decision-making.</p>
+  </section>
+  <section class="section container experience-list">
+    {experience.map((item, i) => (
+      <article class="experience-entry">
+        {item.logo ? (
+          <div class="experience-logo"><img src={item.logo} alt={item.logoAlt || `${item.org} logo`} /></div>
+        ) : (
+          <div class:list={["experience-image", item.gallery?.length > 1 && "has-gallery"]}>
+            {(item.gallery || [{ src: item.image, alt: item.imageAlt }]).map((photo) => (
+              <div class="experience-photo">
+                <ResponsiveImage
+                  src={photo.src}
+                  alt={photo.alt}
+                  sizes="(max-width: 650px) calc(100vw - 36px), (max-width: 900px) 40vw, 36vw"
+                  objectFit={photo.fit || "cover"}
+                  objectPosition={item.org.includes("Agrivoltaics") ? "center 58%" : "center"}
+                />
+              </div>
+            ))}
+          </div>
+        )}
+        <div class="experience-body">
+          <div class="project-meta"><span>0{i + 1} / {item.type}</span><span>{item.period}</span></div>
+          <h2>{item.org}</h2><h3>{item.role}</h3><p>{item.description}</p>
+          <ul>{item.points.map((point) => <li>{point}</li>)}</ul>
+        </div>
+      </article>
+    ))}
+  </section>
+</BaseLayout>

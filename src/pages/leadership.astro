@@ -1,0 +1,40 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import ResponsiveImage from "../components/ResponsiveImage.astro";
+import { leadership } from "../data/site.js";
+---
+<BaseLayout active="Leadership" title="Leadership & Community | Sarthak Neupane">
+  <section class="page-hero container">
+    <p class="eyebrow">LEADERSHIP & COMMUNITY / 04</p>
+    <h1>Building with people,<br /><em>not just technology.</em></h1>
+    <p class="page-lede">Student leadership, community programmes and digital inclusion initiatives have shaped how I work with teams and turn ideas into action.</p>
+  </section>
+  <section class="section container">
+    <div class="leadership-banner">
+      <ResponsiveImage
+        src="/images/leadership.jpg"
+        alt="Community and leadership event group photograph."
+        sizes="(max-width: 900px) calc(100vw - 40px), 50vw"
+        objectPosition="center 68%"
+      />
+      <div><p class="eyebrow">COMMUNITY, LEADERSHIP & SERVICE</p><h2>Ideas become meaningful when people can take part.</h2></div>
+    </div>
+    <div class="leadership-list">
+      {leadership.map((item, i) => (
+        <article class="leadership-entry">
+          <span class="timeline-no">0{i + 1}</span>
+          <div class="leadership-entry-copy"><p class="eyebrow">{item.period}</p><h2>{item.org}</h2><h3>{item.role}</h3><ul>{item.points.map((point) => <li>{point}</li>)}</ul></div>
+          <div class="leadership-entry-gallery">
+            {item.images?.map((image) => (
+              <figure>
+                <ResponsiveImage src={image.src} alt={image.alt} sizes="(max-width: 650px) calc(100vw - 56px), 28vw" />
+                <figcaption>{image.caption}</figcaption>
+              </figure>
+            ))}
+          </div>
+        </article>
+      ))}
+    </div>
+    <div class="fde-note"><p class="eyebrow">ABOUT FDE'S DIRECTION</p><p>FDE's longer-term relaunch work is ongoing and is being developed with the executive team. Its proposed priorities include strengthening governance and legal compliance, building sustainable funding, developing digital inclusion programmes and exploring regional partnerships. These are strategic plans, not claims of completed programmes.</p></div>
+  </section>
+</BaseLayout>

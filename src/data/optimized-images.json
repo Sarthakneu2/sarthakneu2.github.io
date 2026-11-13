@@ -1,0 +1,731 @@
+{
+  "_version": 3,
+  "/images/potrait.jpg": {
+    "width": 1008,
+    "height": 1009,
+    "variants": {
+      "avif": [
+        {
+          "width": 320,
+          "src": "/images/optimized/potrait-320.avif"
+        },
+        {
+          "width": 480,
+          "src": "/images/optimized/potrait-480.avif"
+        },
+        {
+          "width": 640,
+          "src": "/images/optimized/potrait-640.avif"
+        },
+        {
+          "width": 960,
+          "src": "/images/optimized/potrait-960.avif"
+        },
+        {
+          "width": 1008,
+          "src": "/images/optimized/potrait-1008.avif"
+        }
+      ],
+      "webp": [
+        {
+          "width": 320,
+          "src": "/images/optimized/potrait-320.webp"
+        },
+        {
+          "width": 480,
+          "src": "/images/optimized/potrait-480.webp"
+        },
+        {
+          "width": 640,
+          "src": "/images/optimized/potrait-640.webp"
+        },
+        {
+          "width": 960,
+          "src": "/images/optimized/potrait-960.webp"
+        },
+        {
+          "width": 1008,
+          "src": "/images/optimized/potrait-1008.webp"
+        }
+      ]
+    }
+  },
+  "/images/picogrid.jpeg": {
+    "width": 974,
+    "height": 452,
+    "variants": {
+      "avif": [
+        {
+          "width": 320,
+          "src": "/images/optimized/picogrid-320.avif"
+        },
+        {
+          "width": 480,
+          "src": "/images/optimized/picogrid-480.avif"
+        },
+        {
+          "width": 640,
+          "src": "/images/optimized/picogrid-640.avif"
+        },
+        {
+          "width": 960,
+          "src": "/images/optimized/picogrid-960.avif"
+        },
+        {
+          "width": 974,
+          "src": "/images/optimized/picogrid-974.avif"
+        }
+      ],
+      "webp": [
+        {
+          "width": 320,
+          "src": "/images/optimized/picogrid-320.webp"
+        },
+        {
+          "width": 480,
+          "src": "/images/optimized/picogrid-480.webp"
+        },
+        {
+          "width": 640,
+          "src": "/images/optimized/picogrid-640.webp"
+        },
+        {
+          "width": 960,
+          "src": "/images/optimized/picogrid-960.webp"
+        },
+        {
+          "width": 974,
+          "src": "/images/optimized/picogrid-974.webp"
+        }
+      ]
+    }
+  },
+  "/images/hero-workbench.jpg": {
+    "width": 1536,
+    "height": 2048,
+    "variants": {
+      "avif": [
+        {
+          "width": 320,
+          "src": "/images/optimized/hero-workbench-320.avif"
+        },
+        {
+          "width": 480,
+          "src": "/images/optimized/hero-workbench-480.avif"
+        },
+        {
+          "width": 640,
+          "src": "/images/optimized/hero-workbench-640.avif"
+        },
+        {
+          "width": 960,
+          "src": "/images/optimized/hero-workbench-960.avif"
+        },
+        {
+          "width": 1280,
+          "src": "/images/optimized/hero-workbench-1280.avif"
+        },
+        {
+          "width": 1536,
+          "src": "/images/optimized/hero-workbench-1536.avif"
+        }
+      ],
+      "webp": [
+        {
+          "width": 320,
+          "src": "/images/optimized/hero-workbench-320.webp"
+        },
+        {
+          "width": 480,
+          "src": "/images/optimized/hero-workbench-480.webp"
+        },
+        {
+          "width": 640,
+          "src": "/images/optimized/hero-workbench-640.webp"
+        },
+        {
+          "width": 960,
+          "src": "/images/optimized/hero-workbench-960.webp"
+        },
+        {
+          "width": 1280,
+          "src": "/images/optimized/hero-workbench-1280.webp"
+        },
+        {
+          "width": 1536,
+          "src": "/images/optimized/hero-workbench-1536.webp"
+        }
+      ]
+    }
+  },
+  "/images/quanta-research.png": {
+    "width": 970,
+    "height": 623,
+    "variants": {
+      "avif": [
+        {
+          "width": 320,
+          "src": "/images/optimized/quanta-research-320.avif"
+        },
+        {
+          "width": 480,
+          "src": "/images/optimized/quanta-research-480.avif"
+        },
+        {
+          "width": 640,
+          "src": "/images/optimized/quanta-research-640.avif"
+        },
+        {
+          "width": 960,
+          "src": "/images/optimized/quanta-research-960.avif"
+        },
+        {
+          "width": 970,
+          "src": "/images/optimized/quanta-research-970.avif"
+        }
+      ],
+      "webp": [
+        {
+          "width": 320,
+          "src": "/images/optimized/quanta-research-320.webp"
+        },
+        {
+          "width": 480,
+          "src": "/images/optimized/quanta-research-480.webp"
+        },
+        {
+          "width": 640,
+          "src": "/images/optimized/quanta-research-640.webp"
+        },
+        {
+          "width": 960,
+          "src": "/images/optimized/quanta-research-960.webp"
+        },
+        {
+          "width": 970,
+          "src": "/images/optimized/quanta-research-970.webp"
+        }
+      ]
+    }
+  },
+  "/images/nea-field.png": {
+    "width": 490,
+    "height": 750,
+    "variants": {
+      "avif": [
+        {
+          "width": 320,
+          "src": "/images/optimized/nea-field-320.avif"
+        },
+        {
+          "width": 480,
+          "src": "/images/optimized/nea-field-480.avif"
+        },
+        {
+          "width": 490,
+          "src": "/images/optimized/nea-field-490.avif"
+        }
+      ],
+      "webp": [
+        {
+          "width": 320,
+          "src": "/images/optimized/nea-field-320.webp"
+        },
+        {
+          "width": 480,
+          "src": "/images/optimized/nea-field-480.webp"
+        },
+        {
+          "width": 490,
+          "src": "/images/optimized/nea-field-490.webp"
+        }
+      ]
+    }
+  },
+  "/images/hydropower.jpg": {
+    "width": 1280,
+    "height": 853,
+    "variants": {
+      "avif": [
+        {
+          "width": 320,
+          "src": "/images/optimized/hydropower-320.avif"
+        },
+        {
+          "width": 480,
+          "src": "/images/optimized/hydropower-480.avif"
+        },
+        {
+          "width": 640,
+          "src": "/images/optimized/hydropower-640.avif"
+        },
+        {
+          "width": 960,
+          "src": "/images/optimized/hydropower-960.avif"
+        },
+        {
+          "width": 1280,
+          "src": "/images/optimized/hydropower-1280.avif"
+        }
+      ],
+      "webp": [
+        {
+          "width": 320,
+          "src": "/images/optimized/hydropower-320.webp"
+        },
+        {
+          "width": 480,
+          "src": "/images/optimized/hydropower-480.webp"
+        },
+        {
+          "width": 640,
+          "src": "/images/optimized/hydropower-640.webp"
+        },
+        {
+          "width": 960,
+          "src": "/images/optimized/hydropower-960.webp"
+        },
+        {
+          "width": 1280,
+          "src": "/images/optimized/hydropower-1280.webp"
+        }
+      ]
+    }
+  },
+  "/images/agrivoltaics.png": {
+    "width": 700,
+    "height": 736,
+    "variants": {
+      "avif": [
+        {
+          "width": 320,
+          "src": "/images/optimized/agrivoltaics-320.avif"
+        },
+        {
+          "width": 480,
+          "src": "/images/optimized/agrivoltaics-480.avif"
+        },
+        {
+          "width": 640,
+          "src": "/images/optimized/agrivoltaics-640.avif"
+        },
+        {
+          "width": 700,
+          "src": "/images/optimized/agrivoltaics-700.avif"
+        }
+      ],
+      "webp": [
+        {
+          "width": 320,
+          "src": "/images/optimized/agrivoltaics-320.webp"
+        },
+        {
+          "width": 480,
+          "src": "/images/optimized/agrivoltaics-480.webp"
+        },
+        {
+          "width": 640,
+          "src": "/images/optimized/agrivoltaics-640.webp"
+        },
+        {
+          "width": 700,
+          "src": "/images/optimized/agrivoltaics-700.webp"
+        }
+      ]
+    }
+  },
+  "/images/agrivoltaicsiot.jpeg": {
+    "width": 1600,
+    "height": 1200,
+    "variants": {
+      "avif": [
+        {
+          "width": 320,
+          "src": "/images/optimized/agrivoltaicsiot-320.avif"
+        },
+        {
+          "width": 480,
+          "src": "/images/optimized/agrivoltaicsiot-480.avif"
+        },
+        {
+          "width": 640,
+          "src": "/images/optimized/agrivoltaicsiot-640.avif"
+        },
+        {
+          "width": 960,
+          "src": "/images/optimized/agrivoltaicsiot-960.avif"
+        },
+        {
+          "width": 1280,
+          "src": "/images/optimized/agrivoltaicsiot-1280.avif"
+        },
+        {
+          "width": 1600,
+          "src": "/images/optimized/agrivoltaicsiot-1600.avif"
+        }
+      ],
+      "webp": [
+        {
+          "width": 320,
+          "src": "/images/optimized/agrivoltaicsiot-320.webp"
+        },
+        {
+          "width": 480,
+          "src": "/images/optimized/agrivoltaicsiot-480.webp"
+        },
+        {
+          "width": 640,
+          "src": "/images/optimized/agrivoltaicsiot-640.webp"
+        },
+        {
+          "width": 960,
+          "src": "/images/optimized/agrivoltaicsiot-960.webp"
+        },
+        {
+          "width": 1280,
+          "src": "/images/optimized/agrivoltaicsiot-1280.webp"
+        },
+        {
+          "width": 1600,
+          "src": "/images/optimized/agrivoltaicsiot-1600.webp"
+        }
+      ]
+    }
+  },
+  "/images/evmonitor.jpeg": {
+    "width": 472,
+    "height": 510,
+    "variants": {
+      "avif": [
+        {
+          "width": 320,
+          "src": "/images/optimized/evmonitor-320.avif"
+        },
+        {
+          "width": 472,
+          "src": "/images/optimized/evmonitor-472.avif"
+        }
+      ],
+      "webp": [
+        {
+          "width": 320,
+          "src": "/images/optimized/evmonitor-320.webp"
+        },
+        {
+          "width": 472,
+          "src": "/images/optimized/evmonitor-472.webp"
+        }
+      ]
+    }
+  },
+  "/images/ev-monitor.jpeg": {
+    "width": 524,
+    "height": 342,
+    "variants": {
+      "avif": [
+        {
+          "width": 320,
+          "src": "/images/optimized/ev-monitor-320.avif"
+        },
+        {
+          "width": 480,
+          "src": "/images/optimized/ev-monitor-480.avif"
+        },
+        {
+          "width": 524,
+          "src": "/images/optimized/ev-monitor-524.avif"
+        }
+      ],
+      "webp": [
+        {
+          "width": 320,
+          "src": "/images/optimized/ev-monitor-320.webp"
+        },
+        {
+          "width": 480,
+          "src": "/images/optimized/ev-monitor-480.webp"
+        },
+        {
+          "width": 524,
+          "src": "/images/optimized/ev-monitor-524.webp"
+        }
+      ]
+    }
+  },
+  "/images/smartstick.webp": {
+    "width": 800,
+    "height": 602,
+    "variants": {
+      "avif": [
+        {
+          "width": 320,
+          "src": "/images/optimized/smartstick-320.avif"
+        },
+        {
+          "width": 480,
+          "src": "/images/optimized/smartstick-480.avif"
+        },
+        {
+          "width": 640,
+          "src": "/images/optimized/smartstick-640.avif"
+        },
+        {
+          "width": 800,
+          "src": "/images/optimized/smartstick-800.avif"
+        }
+      ],
+      "webp": [
+        {
+          "width": 320,
+          "src": "/images/optimized/smartstick-320.webp"
+        },
+        {
+          "width": 480,
+          "src": "/images/optimized/smartstick-480.webp"
+        },
+        {
+          "width": 640,
+          "src": "/images/optimized/smartstick-640.webp"
+        },
+        {
+          "width": 800,
+          "src": "/images/optimized/smartstick-800.webp"
+        }
+      ]
+    }
+  },
+  "/images/Tachometer.png": {
+    "width": 567,
+    "height": 327,
+    "variants": {
+      "avif": [
+        {
+          "width": 320,
+          "src": "/images/optimized/Tachometer-320.avif"
+        },
+        {
+          "width": 480,
+          "src": "/images/optimized/Tachometer-480.avif"
+        },
+        {
+          "width": 567,
+          "src": "/images/optimized/Tachometer-567.avif"
+        }
+      ],
+      "webp": [
+        {
+          "width": 320,
+          "src": "/images/optimized/Tachometer-320.webp"
+        },
+        {
+          "width": 480,
+          "src": "/images/optimized/Tachometer-480.webp"
+        },
+        {
+          "width": 567,
+          "src": "/images/optimized/Tachometer-567.webp"
+        }
+      ]
+    }
+  },
+  "/images/leadership.jpg": {
+    "width": 4096,
+    "height": 3067,
+    "variants": {
+      "avif": [
+        {
+          "width": 320,
+          "src": "/images/optimized/leadership-320.avif"
+        },
+        {
+          "width": 480,
+          "src": "/images/optimized/leadership-480.avif"
+        },
+        {
+          "width": 640,
+          "src": "/images/optimized/leadership-640.avif"
+        },
+        {
+          "width": 960,
+          "src": "/images/optimized/leadership-960.avif"
+        },
+        {
+          "width": 1280,
+          "src": "/images/optimized/leadership-1280.avif"
+        },
+        {
+          "width": 1920,
+          "src": "/images/optimized/leadership-1920.avif"
+        },
+        {
+          "width": 2400,
+          "src": "/images/optimized/leadership-2400.avif"
+        }
+      ],
+      "webp": [
+        {
+          "width": 320,
+          "src": "/images/optimized/leadership-320.webp"
+        },
+        {
+          "width": 480,
+          "src": "/images/optimized/leadership-480.webp"
+        },
+        {
+          "width": 640,
+          "src": "/images/optimized/leadership-640.webp"
+        },
+        {
+          "width": 960,
+          "src": "/images/optimized/leadership-960.webp"
+        },
+        {
+          "width": 1280,
+          "src": "/images/optimized/leadership-1280.webp"
+        },
+        {
+          "width": 1920,
+          "src": "/images/optimized/leadership-1920.webp"
+        },
+        {
+          "width": 2400,
+          "src": "/images/optimized/leadership-2400.webp"
+        }
+      ]
+    }
+  },
+  "/images/leadership1.jpeg": {
+    "width": 989,
+    "height": 680,
+    "variants": {
+      "avif": [
+        {
+          "width": 320,
+          "src": "/images/optimized/leadership1-320.avif"
+        },
+        {
+          "width": 480,
+          "src": "/images/optimized/leadership1-480.avif"
+        },
+        {
+          "width": 640,
+          "src": "/images/optimized/leadership1-640.avif"
+        },
+        {
+          "width": 960,
+          "src": "/images/optimized/leadership1-960.avif"
+        },
+        {
+          "width": 989,
+          "src": "/images/optimized/leadership1-989.avif"
+        }
+      ],
+      "webp": [
+        {
+          "width": 320,
+          "src": "/images/optimized/leadership1-320.webp"
+        },
+        {
+          "width": 480,
+          "src": "/images/optimized/leadership1-480.webp"
+        },
+        {
+          "width": 640,
+          "src": "/images/optimized/leadership1-640.webp"
+        },
+        {
+          "width": 960,
+          "src": "/images/optimized/leadership1-960.webp"
+        },
+        {
+          "width": 989,
+          "src": "/images/optimized/leadership1-989.webp"
+        }
+      ]
+    }
+  },
+  "/images/leadership2.png": {
+    "width": 497,
+    "height": 546,
+    "variants": {
+      "avif": [
+        {
+          "width": 320,
+          "src": "/images/optimized/leadership2-320.avif"
+        },
+        {
+          "width": 480,
+          "src": "/images/optimized/leadership2-480.avif"
+        },
+        {
+          "width": 497,
+          "src": "/images/optimized/leadership2-497.avif"
+        }
+      ],
+      "webp": [
+        {
+          "width": 320,
+          "src": "/images/optimized/leadership2-320.webp"
+        },
+        {
+          "width": 480,
+          "src": "/images/optimized/leadership2-480.webp"
+        },
+        {
+          "width": 497,
+          "src": "/images/optimized/leadership2-497.webp"
+        }
+      ]
+    }
+  },
+  "/images/leadership4.jpeg": {
+    "width": 1200,
+    "height": 1600,
+    "variants": {
+      "avif": [
+        {
+          "width": 320,
+          "src": "/images/optimized/leadership4-320.avif"
+        },
+        {
+          "width": 480,
+          "src": "/images/optimized/leadership4-480.avif"
+        },
+        {
+          "width": 640,
+          "src": "/images/optimized/leadership4-640.avif"
+        },
+        {
+          "width": 960,
+          "src": "/images/optimized/leadership4-960.avif"
+        },
+        {
+          "width": 1200,
+          "src": "/images/optimized/leadership4-1200.avif"
+        }
+      ],
+      "webp": [
+        {
+          "width": 320,
+          "src": "/images/optimized/leadership4-320.webp"
+        },
+        {
+          "width": 480,
+          "src": "/images/optimized/leadership4-480.webp"
+        },
+        {
+          "width": 640,
+          "src": "/images/optimized/leadership4-640.webp"
+        },
+        {
+          "width": 960,
+          "src": "/images/optimized/leadership4-960.webp"
+        },
+        {
+          "width": 1200,
+          "src": "/images/optimized/leadership4-1200.webp"
+        }
+      ]
+    }
+  }
+}

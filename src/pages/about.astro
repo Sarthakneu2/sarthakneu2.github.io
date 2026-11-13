@@ -1,0 +1,39 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import ResponsiveImage from "../components/ResponsiveImage.astro";
+import { site } from "../data/site.js";
+---
+<BaseLayout active="About" title="About | Sarthak Neupane">
+  <section class="page-hero container">
+    <p class="eyebrow">A LITTLE ABOUT ME / 01</p>
+    <h1>Curiosity is where<br /><em>my engineering starts.</em></h1>
+    <p class="page-lede">An electrical engineer exploring how data, software and intelligent algorithms can work alongside physical systems.</p>
+  </section>
+  <section class="container about-layout section">
+    <div class="about-image">
+      <ResponsiveImage
+        src="/images/hero-workbench.jpg"
+        alt="Sarthak interviewing at a football field during an engineering project."
+        sizes="(max-width: 900px) min(calc(100vw - 40px), 500px), 34vw"
+        objectPosition="center 60%"
+      />
+    </div>
+    <div class="about-copy">
+      <p class="eyebrow">THE STORY SO FAR</p>
+      {site.story.map((paragraph) => <p>{paragraph}</p>)}
+      <div class="about-facts">
+        <div><span>EDUCATION</span><b>B.E. Electrical & Electronics Engineering</b><small>Kathmandu University · Power and Control</small></div>
+        <div><span>BASED IN</span><b>Nepal</b></div>
+        <div><span>CURRENT DIRECTION</span><b>Applied AI/ML & Intelligent Energy Systems</b></div>
+      </div>
+    </div>
+  </section>
+  <section class="section section-tint">
+    <div class="container">
+      <div class="section-heading"><span class="section-index">02</span><div><p class="eyebrow">AREAS OF INTEREST</p><h2>What I keep exploring.</h2></div></div>
+      <div class="interest-grid">
+        {site.focus.map((item, i) => <div class="interest-item"><span>0{i + 1}</span><h3>{item}</h3><b>↗</b></div>)}
+      </div>
+    </div>
+  </section>
+</BaseLayout>

@@ -1,0 +1,19 @@
+{
+  "name": "sarthak-portfolio",
+  "type": "module",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "astro dev",
+    "predev": "npm run optimize:images",
+    "build": "astro build",
+    "prebuild": "npm run optimize:images",
+    "optimize:images": "node scripts/optimize-images.mjs",
+    "preview": "astro preview"
+  },
+  "dependencies": {
+    "astro": "^5.0.0"
+  },
+  "devDependencies": {
+    "sharp": "^0.34.5"
+  }
+}
