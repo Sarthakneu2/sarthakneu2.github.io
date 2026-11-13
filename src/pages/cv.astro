@@ -9,7 +9,12 @@ import { areasOfInterest, cvProjects, education, experience, leadership, skills,
         <p class="eyebrow">CURRICULUM VITAE</p>
         <h1>{site.name}</h1>
         <p class="cv-role">Electrical Engineer | Machine Learning & Data Analytics | Energy Systems</p>
-        <p class="cv-contact"><a href={`mailto:${site.email}`}>{site.email}</a><span>·</span><a href="tel:+9779807299975">+977 9807299975</a><span>·</span><span>{site.location}</span></p>
+        <p class="cv-contact">
+          <a href={`mailto:${site.email}`}>{site.email}</a><span>·</span>
+          <a href={site.github} target="_blank" rel="noopener noreferrer">GitHub</a><span>·</span>
+          <a href={site.linkedin} target="_blank" rel="noopener noreferrer">LinkedIn</a><span>·</span>
+          <span>{site.location}</span>
+        </p>
       </div>
       <button class="button button-dark cv-print" id="print-cv" type="button">Print / save PDF <span>↗</span></button>
     </header>

@@ -35,7 +35,7 @@ export const projects = [
       "Modelled the hybrid energy system and its switching logic in MATLAB/Simulink.",
       "Created a separate software platform for simulated solar and battery telemetry, storage and energy analytics."
     ],
-    note: "The physical prototype and the repository-based software platform are related parts of the project, but they are distinct. The software platform uses simulated telemetry; the repository should not be described as receiving live measurements from the physical ESP32 prototype.",
+    note: "The physical prototype and software platform are distinct parts of the project. The software platform uses simulated telemetry rather than live measurements from the ESP32 prototype.",
     github: "https://github.com/Sarthakneu2/Picogrid-Energy-Monitoring",
     imageAlt: "PicoGrid energy monitoring prototype with its sensor and display hardware."
   },
@@ -44,26 +44,25 @@ export const projects = [
     number: "02",
     title: "Controlled Environment Farming & Agrivoltaics",
     category: "Renewable energy · Agriculture · Research",
-    year: "Post-graduation research",
-    image: "/images/agrivoltaics.png",
+    year: "Research collaboration",
+    image: "/images/agrivoltaicsiot.jpeg",
     gallery: [
       {
-        src: "/images/agrivoltaics.png",
-        alt: "Researchers tending crops beneath a solar photovoltaic structure.",
-        caption: "Crop cultivation beneath solar PV"
+        src: "/images/agrivoltaicsiot.jpeg",
+        alt: "Researchers tending crops in a controlled-environment growing area.",
+        caption: "Controlled-environment agriculture fieldwork"
       },
       {
-        src: "/images/agrivoltaicsiot.jpeg",
-        alt: "IoT monitoring hardware with an ESP32 and connected sensors.",
-        caption: "IoT monitoring hardware",
+        src: "/images/agrivoltaics.png",
+        alt: "ESP32-based crop-monitoring controller board with labeled sensor connections.",
+        caption: "IoT monitoring prototype hardware",
         fit: "contain"
       }
     ],
-    imagePosition: "center 58%",
-    imageAlt: "Researchers working with crops beneath a solar photovoltaic structure.",
+    imageAlt: "Researchers tending crops in a controlled-environment growing area.",
     summary: "Research and pilot-system development exploring crop production beneath solar PV and the technical and financial feasibility of agrivoltaics.",
-    overview: "Following the PicoGrid project, I wanted to continue working on applied energy research. Together with my Quanta Investment co-founder, I explored opportunities at the intersection of agriculture, energy and investment, with support from NTIC.",
-    motivation: "The research explored whether solar generation and controlled-environment agriculture could be planned together, and how energy, land and water use could be assessed as part of a pilot system.",
+    overview: "With support from the Nepal Technology Innovation Center (NTIC), this research collaboration explored a pilot approach to combining solar PV generation with controlled-environment crop production. The work considered electrical design, agricultural resource use and feasibility.",
+    motivation: "The objective was to assess how solar generation and controlled-environment farming could be planned together, including implications for energy yield, land and water use, and pilot-system feasibility.",
     contribution: [
       "Contributed to technical and financial feasibility research.",
       "Explored land equivalent ratio (LER), water consumption and IoT integration.",
@@ -76,7 +75,7 @@ export const projects = [
       "Contributed to the electrical design and configuration of an agrivoltaics pilot system.",
       "Examined technical, resource-use and financial considerations for the concept."
     ],
-    note: "Research collaboration with NTIC. Academic supervision included Prof. Dr. Sujith Ravi of Temple University. Confirm the formal project title, dates and exact affiliation before publication."
+    note: "The research was conducted in collaboration with NTIC, with academic supervision from Prof. Dr. Sujith Ravi of Temple University."
   },
   {
     slug: "ev-charging-monitoring",
@@ -99,7 +98,7 @@ export const projects = [
       "Developed a small-scale monitoring and charging prototype.",
       "Displayed key electrical and charging parameters through a dashboard."
     ],
-    note: "This was a small-scale academic prototype, not a commercial EV charging station. State-of-charge estimation should be described as an estimate based on the project's measurements."
+    note: "This was a small-scale academic prototype, not a commercial EV charging station. State-of-charge and time-to-charge values were estimates rather than direct measurements."
   },
   {
     slug: "smart-assistive-stick",
@@ -148,7 +147,7 @@ export const projects = [
       "Designed a three-digit display system for rotational speed measurement.",
       "Developed circuit simulation and PCB layout as part of the project."
     ],
-    note: "The project report described a measurement range up to 999 RPM. Confirm the final tested operating range before presenting it as a verified result."
+    note: "The project report describes a design range up to 999 RPM; this is not presented as a verified tested operating range."
   },
   {
     slug: "quantitative-research",
@@ -174,6 +173,6 @@ export const projects = [
       "Built practical experience in statistical market research and Python-based strategy development.",
       "Worked across research, historical backtesting and later live investment decisions."
     ],
-    note: "No investment returns or performance figures are claimed here. Add any performance metrics only if they are documented, appropriately contextualised and approved for public disclosure."
+    note: "No investment-return or strategy-performance figures are reported. The work described here covers research, backtesting and subsequent investment decisions."
   }
 ];
